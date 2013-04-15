@@ -1,9 +1,8 @@
-print "Welcome to rzr911's square root finder!"
 import math
-number=raw_input("Enter the number you wish to find its square root: ")
-word=number
-word=float(word) 
-if type(word)==type(4.2):
-    print math.sqrt(word)
 
-raw_input("Press Enter to quit")
+while 1:
+    try:
+	    print math.sqrt(float(raw_input("Welcome to rzr911's square root finder!\nEnter the number you wish to find its square root: "))); raw_input("\nPress Enter to quit")
+	    break
+	except ValueError:
+		print "Input is not a valid number"
